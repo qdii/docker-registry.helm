@@ -113,6 +113,7 @@ their default values.
 | `namespace`                 | specify a namespace to install the chart to - defaults to `.Release.Namespace`             | `{{ .Release.Namespace }}` |
 | `nodeSelector`              | node labels for pod assignment                                                             | `{}`            |
 | `affinity`                  | affinity settings                                                                          | `{}`            |
+| `topologySpreadConstraints` | topology spread constraints                                                                | `{}`            |
 | `tolerations`               | pod tolerations                                                                            | `[]`            |
 | `ingress.enabled`           | If true, Ingress will be created                                                           | `false`         |
 | `ingress.annotations`       | Ingress annotations                                                                        | `{}`            |
