@@ -70,6 +70,8 @@ their default values.
 | `service.loadBalancerSourceRanges`| if `service.type` is `LoadBalancer` and this is non-empty, sets the loadBalancerSourceRanges of the service | `nil`           |
 | `service.sessionAffinity`       | service session affinity                                                               | `nil`           |
 | `service.sessionAffinityConfig` | service session affinity config                                                        | `nil`           |
+| `service.ipFamilies`        | IP families to use for the service                                                         | `[]`            |
+| `service.ipFamilyPolicy`    | IP family policy for the service                                                           | `PreferDualStack`|
 | `replicaCount`              | k8s replicas                                                                               | `1`             |
 | `updateStrategy`            | update strategy for deployment                                                             | `{}`            |
 | `podAnnotations`            | Annotations for deployment pod, and `garbageCollect` pod unless set explicitly there. See `garbageCollect` | `{}` |
